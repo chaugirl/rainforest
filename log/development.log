@@ -2296,3 +2296,132 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:16:24
 Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:16:25 -0500
   [1m[36mUser Load (3.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-11-11 14:36:36 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 653ms (Views: 651.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:36:37 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-11 14:36:48 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QtwXU2z+4kFZfE8/v6sys3BP/fZXj2/nsUUbQxK5b/c=", "email"=>"arizona@chau.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError (undefined method `fnd_by' for #<Class:0x007f9d715d3138>):
+  app/controllers/sessions_controller.rb:6:in `create'
+
+
+  Rendered /Users/marialuisafonacier/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.5ms)
+  Rendered /Users/marialuisafonacier/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/marialuisafonacier/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/marialuisafonacier/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.1.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (40.2ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-11-11 14:37:07 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-11 14:37:07 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:37:07 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:07 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:07 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:37:07 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:07 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:07 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:07 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:07 -0500
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-11-11 14:37:19 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QtwXU2z+4kFZfE8/v6sys3BP/fZXj2/nsUUbQxK5b/c=", "email"=>"arizona@chau.com", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'arizona@chau.com' LIMIT 1
+Redirected to http://localhost:3000/products
+Completed 302 Found in 180ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-11-11 14:37:20 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 148ms (Views: 136.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/products.css?body=1" for 127.0.0.1 at 2014-11-11 14:37:20 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-11 14:37:20 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:20 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-11 14:37:20 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:20 -0500
+
+
+Started GET "/assets/products.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:20 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:20 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:20 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-11 14:37:20 -0500
